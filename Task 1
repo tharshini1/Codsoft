@@ -1,0 +1,24 @@
+
+def chatbot():
+    print("Chatbot: Hello! I am a simple chatbot. Type 'bye' to exit.")
+
+    while True:
+        
+        user_input = input("You: ").lower()
+
+        
+        if "hello" in user_input or "hi" in user_input:
+            print("Chatbot: Hello! How can I assist you today?")
+        elif "how are you" in user_input:
+            print("Chatbot: I'm just a bunch of code, but I'm functioning as expected. How about you?")
+        elif "name" in user_input:
+            print("Chatbot: I am Chatbot, your virtual assistant.")
+        elif "bye" in user_input:
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        elif "help" in user_input:
+            print("Chatbot: Sure, let me know what you need help with!")
+        else:
+            print("Chatbot: I'm sorry, I don't understand that. Can you rephrase?")
+if __name__ == "__main__":
+    chatbot()
